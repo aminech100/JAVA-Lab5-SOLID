@@ -45,7 +45,7 @@ public class Invoice {
     }
 
     public void save() throws IOException {
-        try (FileWriter fw = new FileWriter(customer + ".txt")) {
+        try (FileWriter fw = new FileWriter(customer + "(before).txt")) {
             fw.write(print());
         }
     }
